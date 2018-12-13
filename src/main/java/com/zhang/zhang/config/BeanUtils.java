@@ -13,10 +13,7 @@ public class BeanUtils implements ApplicationContextAware{
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		
-		System.out.println("====>"+applicationContext);
 		this.applicationContext = applicationContext;
-		Object bean = applicationContext.getBean("bjUserService");
-		System.out.println("bean=>"+ bean);
 	}
 
 }
